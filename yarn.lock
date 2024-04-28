@@ -214,6 +214,14 @@
   dependencies:
     tslib "^2.3.0"
 
+"@angular/youtube-player@^17.3.6":
+  version "17.3.6"
+  resolved "https://registry.yarnpkg.com/@angular/youtube-player/-/youtube-player-17.3.6.tgz#5413552e30e9e33ba9d423ed0c0f1b8fe5734c3c"
+  integrity sha512-MjIAbSyxhZywkSFx2MLquLy39FER9rRUsPhISuwHKYzHKje+Ng5poHFFlX+QYGUlxUptD4dIxqD2AmTTf0chcA==
+  dependencies:
+    "@types/youtube" "^0.0.42"
+    tslib "^2.3.0"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.23.5", "@babel/code-frame@^7.24.1", "@babel/code-frame@^7.24.2":
   version "7.24.2"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.24.2.tgz#718b4b19841809a58b29b68cde80bc5e1aa6d9ae"
@@ -2006,6 +2014,11 @@
   integrity sha512-vmQSUcfalpIq0R9q7uTo2lXs6eGIpt9wtnLdMv9LVpIjCA/+ufZRozlVoVelIYixx1ugCBKDhn89vnsEGOCx9A==
   dependencies:
     "@types/node" "*"
+
+"@types/youtube@^0.0.42":
+  version "0.0.42"
+  resolved "https://registry.yarnpkg.com/@types/youtube/-/youtube-0.0.42.tgz#c3568e3e82e04cbd00cac3b66564ebcd21fd9d90"
+  integrity sha512-Nqo3HMPFPcNyZ7HNFZJjpH+N4yXqpxBItG+41e7nL9zednovMRZMXWj36CctSznbBcbj6ucvkJDo5iZ8SKqLIw==
 
 "@vitejs/plugin-basic-ssl@1.1.0":
   version "1.1.0"
@@ -5126,6 +5139,13 @@ postcss@^8.2.14, postcss@^8.4.23, postcss@^8.4.33, postcss@^8.4.35:
     nanoid "^3.3.7"
     picocolors "^1.0.0"
     source-map-js "^1.2.0"
+
+primeng@^17.15.0:
+  version "17.15.0"
+  resolved "https://registry.yarnpkg.com/primeng/-/primeng-17.15.0.tgz#923fc381adea223bb54a1fac5a307e2076496a9e"
+  integrity sha512-DzEDFVKaAjCfOmF8/Nenun7/nwNb/KY0T8LZJTFVbWok3xDB+2U01/yfhPsQMz+7aVnPFP8FHzbaI70Zt752/w==
+  dependencies:
+    tslib "^2.3.0"
 
 proc-log@^3.0.0:
   version "3.0.0"

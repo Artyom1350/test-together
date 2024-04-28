@@ -1,0 +1,32 @@
+<div class="page-wrapper">
+    <form [formGroup]="form" (submit)="pasteUrl()">
+        <p-inputGroup>
+                <input 
+                formControlName="url"
+                type="text" 
+                pInputText
+                [tabIndex]="1"
+                autofocus
+            />
+            <button pButton type="submit" label="Найти видео" [disabled]="formInvalid"></button>
+        </p-inputGroup>
+    </form>
+    <div class="video-container" #videoContainer>
+        <youtube-player
+            #player
+            [videoId]="videoUrl"
+            width="860"
+            height="500"
+            (ready)="test($event)"
+        ></youtube-player>
+    </div>
+    <div class="video-controllers">
+        <h3>Кнопки для теста</h3>
+        <div class="buttons-wrapper">
+            <button pButton label="Пауза" (click)="pause()"></button>
+            <button pButton label="Старт" (click)="start()"></button>
+            <button pButton label="-10с" (click)="seekMinus()"></button>
+            <button pButton label="+10с" (click)="seekPlus()"></button>
+        </div>
+    </div>
+</div>
