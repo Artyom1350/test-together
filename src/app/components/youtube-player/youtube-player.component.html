@@ -1,7 +1,7 @@
 <div class="page-wrapper">
     <form [formGroup]="form" (submit)="pasteUrl()">
         <p-inputGroup>
-                <input 
+            <input 
                 formControlName="url"
                 type="text" 
                 pInputText
@@ -17,7 +17,6 @@
             [videoId]="videoUrl"
             width="860"
             height="500"
-            (ready)="test($event)"
         ></youtube-player>
     </div>
     <div class="video-controllers">
@@ -27,6 +26,23 @@
             <button pButton label="Старт" (click)="start()"></button>
             <button pButton label="-10с" (click)="seekMinus()"></button>
             <button pButton label="+10с" (click)="seekPlus()"></button>
+        </div>
+    </div>
+    <div class="video-controllers" style="width: 100%;">
+        <h3>Создание комнаты и т.д.</h3>
+        <div class="buttons-wrapper" style="width: 100%;">
+            <button pButton label="Создать комнату" style="width: 30%;" (click)="createRoom()"></button>
+
+            <p-inputGroup>
+                <input 
+                    type="text" 
+                    pInputText
+                    [tabIndex]="1"
+                    autofocus
+                    [(ngModel)]="roomUrl"
+                />
+                <button pButton label="Подключиться к комнате" (click)="joinRoom()"></button>
+            </p-inputGroup>
         </div>
     </div>
 </div>
